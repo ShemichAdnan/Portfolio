@@ -87,15 +87,16 @@ const Home = () => {
             </a>
           </motion.div>
 
-          <motion.button
+          <motion.a
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}
-            onClick={() => scrollToSection('projects')}
+            href="/AdnanŠemić-CV.pdf"
+            download="AdnanŠemić-CV.pdf"
             className="btn primary hero-cta"
           >
-            View My Work
-          </motion.button>
+            Download CV
+          </motion.a>
         </motion.div>
 
         {/* Right content - Profile Image */}

@@ -14,8 +14,8 @@ function App() {
       <div className="navbar-spacer" />
       <main>
         <Home />
-        {/*<Projects />
-        <Experience />
+        {<Projects />
+        /*<Experience />
         <Skills />
         <Contact />*/}
       </main>

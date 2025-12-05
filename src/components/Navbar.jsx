@@ -5,8 +5,8 @@ import { Menu, X } from 'lucide-react'
 const navItems = [
   { label: 'Home', href: '#home' },
   { label: 'Projects', href: '#projects' },
-  { label: 'Skills', href: '#skills' },
   { label: 'Experience', href: '#experience' },
+  { label: 'Skills', href: '#skills' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -39,9 +39,16 @@ const Navbar = () => {
   }, [])
 
   const scrollToSection = (href) => {
-    const element = document.getElementById(href.slice(1))
-    element?.scrollIntoView({ behavior: 'smooth' })
+    // Close menu first
     setIsOpen(false)
+    
+    // Small delay to allow menu animation to start, then scroll
+    setTimeout(() => {
+      const element = document.getElementById(href.slice(1))
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+    }, 100)
   }
 
   return (
