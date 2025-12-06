@@ -19,7 +19,6 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
 
-      // Update active section based on scroll position
       const sections = navItems.map((item) => item.href.slice(1))
       const current = sections.find((section) => {
         const element = document.getElementById(section)
@@ -39,10 +38,8 @@ const Navbar = () => {
   }, [])
 
   const scrollToSection = (href) => {
-    // Close menu first
     setIsOpen(false)
     
-    // Small delay to allow menu animation to start, then scroll
     setTimeout(() => {
       const element = document.getElementById(href.slice(1))
       if (element) {
@@ -59,7 +56,6 @@ const Navbar = () => {
       className={`navbar ${isScrolled ? 'scrolled' : ''}`}
     >
       <div className="nav">
-        {/* Logo */}
         <motion.a
           href="#home"
           onClick={(e) => {
@@ -72,7 +68,6 @@ const Navbar = () => {
           {'<Adnan Šemić />'}
         </motion.a>
 
-        {/* Desktop Navigation */}
         <div className="nav-links desktop">
           {navItems.map((item, index) => (
             <motion.a
@@ -98,7 +93,6 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Mobile Menu Button */}
         <motion.button
           whileTap={{ scale: 0.9 }}
           onClick={() => setIsOpen(!isOpen)}
@@ -109,7 +103,6 @@ const Navbar = () => {
         </motion.button>
       </div>
 
-      {/* Mobile Navigation */}
       <motion.div
         initial={false}
         animate={{

@@ -11,7 +11,6 @@ const Home = () => {
 
   return (
     <section id="home" className="section home">
-      {/* Animated background gradient */}
       <div className="hero-bg">
         <motion.div
           className="hero-gradient hero-gradient-1"
@@ -41,7 +40,6 @@ const Home = () => {
       </div>
 
       <div className="home-content">
-        {/* Left content */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -99,7 +97,6 @@ const Home = () => {
           </motion.a>
         </motion.div>
 
-        {/* Right content - Profile Image */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -116,7 +113,6 @@ const Home = () => {
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

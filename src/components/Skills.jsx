@@ -33,7 +33,6 @@ const skills = [
 ]
 
 const Skills = () => {
-  // Calculate positions in two columns (left and right of brain)
   const getColumnPosition = (index) => {
     const isLeft = index % 2 === 0
     const rowIndex = Math.floor(index / 2)
@@ -65,7 +64,6 @@ const Skills = () => {
         </motion.div>
 
         <div className="skills-column-display">
-          {/* Central Brain Hub */}
           <motion.div
             initial={{ scale: 0, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
@@ -93,7 +91,6 @@ const Skills = () => {
             </div>
           </motion.div>
 
-          {/* Skills in Two Columns */}
           {skills.map((skill, index) => {
             const position = getColumnPosition(index)
             const Icon = skill.icon
@@ -156,7 +153,6 @@ const Skills = () => {
                     </div>
                   </div>
 
-                  {/* Connection line to center (visible on hover) */}
                   <motion.div
                     initial={{ scaleX: 0 }}
                     whileHover={{ scaleX: 1 }}
@@ -168,7 +164,6 @@ const Skills = () => {
                   />
                 </motion.div>
 
-                {/* Floating animation */}
                 <motion.div
                   animate={{
                     y: [0, -8, 0],

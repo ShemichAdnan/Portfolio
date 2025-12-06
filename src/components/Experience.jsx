@@ -70,7 +70,6 @@ const Experience = () => {
           </p>
         </motion.div>
 
-        {/* Interactive Tabs */}
         <div className="experience-tabs-wrapper">
           <div className="experience-tabs">
             <motion.button
@@ -113,7 +112,6 @@ const Experience = () => {
           </div>
         </div>
 
-        {/* Timeline Container */}
         <div className="timeline-wrapper">
           <AnimatePresence mode="wait">
             <motion.div
@@ -123,7 +121,6 @@ const Experience = () => {
               exit={{ opacity: 0, x: -20 }}
               transition={{ duration: 0.4 }}
             >
-              {/* Vertical Line */}
               <div className="timeline-line-container">
                 <motion.div
                   className={`timeline-line ${activeTab === 'education' ? 'education' : ''}`}
@@ -139,7 +136,6 @@ const Experience = () => {
                 />
               </div>
 
-              {/* Timeline Events */}
               <div className="timeline-events">
                 {currentData.map((item, index) => (
                   <motion.div
@@ -149,7 +145,6 @@ const Experience = () => {
                     transition={{ delay: index * 0.15, duration: 0.5 }}
                     className="timeline-event"
                   >
-                    {/* Timeline Dot */}
                     <div className="timeline-dot-wrapper">
                       <motion.div
                         initial={{ scale: 0 }}
@@ -186,7 +181,6 @@ const Experience = () => {
                       </motion.div>
                     </div>
 
-                    {/* Content Card */}
                     <div className={`timeline-card-wrapper ${index % 2 === 0 ? 'right' : 'left'}`}>
                       <motion.div
                         whileHover={{ scale: 1.02, y: -5 }}
@@ -241,12 +235,11 @@ const Experience = () => {
           </AnimatePresence>
         </div>
 
-        {/* Bottom Accent */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.8 }}
+          transition={{ delay: 0.4 }}
           className="experience-footer"
         >
           <div className={`experience-footer-card ${activeTab === 'education' ? 'education' : ''}`}>

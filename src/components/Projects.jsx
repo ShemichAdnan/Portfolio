@@ -54,13 +54,12 @@ const Projects = () => {
   const cardWidth = 420
   const totalProjects = projectsData.length
   
-  // Triple the array for seamless infinite scroll
   const extendedProjects = [...projectsData, ...projectsData, ...projectsData]
 
   useEffect(() => {
     let rafId
     let last = performance.now()
-    const speed = 60 // px/second - adjust for faster/slower scroll
+    const speed = 60
     const currentIndexRef = { value: currentIndex }
 
     const loop = (now) => {
@@ -69,7 +68,6 @@ const Projects = () => {
 
       if (!isPaused && !isDragging) {
         let next = x.get() - speed * dt
-        // Wrap: when we pass the reset point, shift by totalProjects*cardWidth
         const resetPoint = -totalProjects * cardWidth * 2
         if (next <= resetPoint) {
           next += totalProjects * cardWidth
