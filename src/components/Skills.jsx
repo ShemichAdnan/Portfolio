@@ -18,18 +18,17 @@ import {
 } from 'lucide-react'
 
 const skills = [
-  { id: 1, name: 'HTML', icon: FileCode, color: 'from-orange-600 to-orange-400' },
-  { id: 2, name: 'CSS', icon: Palette, color: 'from-blue-600 to-blue-400' },
-  { id: 3, name: 'JavaScript', icon: Code, color: 'from-yellow-500 to-yellow-300' },
-  { id: 4, name: 'React.js', icon: Code2, color: 'from-cyan-400 to-blue-500' },
-  { id: 5, name: 'C#', icon: Hash, color: 'from-purple-500 to-purple-700' },
-  { id: 6, name: '.NET MAUI', icon: Smartphone, color: 'from-indigo-500 to-purple-500' },
-  { id: 7, name: 'Figma', icon: Figma, color: 'from-pink-500 to-purple-500' },
-  { id: 8, name: 'Video Editing', icon: Video, color: 'from-red-500 to-pink-500' },
-  { id: 9, name: 'Java', icon: Coffee, color: 'from-orange-500 to-red-500' },
-  { id: 10, name: 'C++', icon: Terminal, color: 'from-purple-600 to-blue-600' },
-  { id: 11, name: 'TypeScript', icon: Terminal, color: 'from-blue-700 to-blue-500' },
-
+  { id: 1, name: 'JavaScript', icon: Code, },
+  { id: 2, name: 'React.js', icon: Code2, },
+  { id: 3, name: 'Java', icon: Coffee, },
+  { id: 4, name: 'CSS', icon: Palette, },
+  { id: 5, name: 'HTML', icon: FileCode, },
+  { id: 6, name: 'C#', icon: Hash, },
+  { id: 7, name: 'TypeScript', icon: Terminal, },
+  { id: 8, name: 'C++', icon: Terminal, },
+  { id: 9, name: '.NET MAUI', icon: Smartphone, },
+  { id: 10, name: 'Figma', icon: Figma, },
+  { id: 11, name: 'Video Editing', icon: Video, }
 ]
 
 const Skills = () => {

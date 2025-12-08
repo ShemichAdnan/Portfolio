@@ -1,13 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { motion, useMotionValue, animate } from 'framer-motion'
 import { Github, ExternalLink } from 'lucide-react'
-
+import LessonsImg from '../assets/Lessons.png';
+import calculatorAppImg from '../assets/calculatorApp.png';
+import ECOllectImg from '../assets/ecollect.png';
+import ASHEImg from '../assets/ashe.png';
 const projectsData = [
   {
     id: 1,
     title: 'ECOllect',
     description: 'ECOllect is a mobile application designed to encourage community participation in environmental clean-up actions through a point-based reward system. Users can sign up for eco-actions, track events on a map, earn points for participation, and redeem them for sponsored rewards.',
-    image: 'ECOllect.png',
+    image: ECOllectImg,
     github: 'https://github.com/ShemichAdnan/ECOllect',
     demo: null,
     tags: ['.NET MAUI', 'C#', 'Google Maps API', 'Firebase'],
@@ -17,7 +20,7 @@ const projectsData = [
     id: 2,
     title: 'ASHE',
     description: 'Anonymous Self Help Experience is a calming web app that helps users explore what a psychotherapy session feels like through interactive exercises, AI-guided conversations, and therapy-inspired cards — all designed to reduce stigma and build comfort before talking to a real therapist.',
-    image: 'ASHE.png',
+    image: ASHEImg,
     github: 'https://github.com/hodzicmirza/mindTech',
     demo: 'https://mind-tech-eight.vercel.app/',
     tags: ['React', 'Tailwind', 'OpenRouter'],
@@ -27,7 +30,7 @@ const projectsData = [
     id: 3,
     title: 'Lessons',
     description: 'This app connects people who want to learn something new with those who can teach it. Whether you’re looking for an instructor or want to offer your own tutoring services, the platform makes it easy to connect, browse profiles, and quickly find the ideal mentor or student.',
-    image: 'Lessons.png',
+    image: LessonsImg,
     github: 'https://github.com/ShemichAdnan/LessonsPlatform',
     demo: null,
     tags: ['TypeScript', 'Node.js', 'MySQL'],
@@ -37,7 +40,7 @@ const projectsData = [
     id: 4,
     title: 'Calculator App',
     description: 'This is a simple Calculator application built using C# and .NET MAUI. The app provides basic arithmetic operations and additional features to enhance user experience.',
-    image: 'calculatorApp.png',
+    image: calculatorAppImg,
     github: 'https://github.com/ShemichAdnan/CalculatorApp',
     demo: null,
     tags: ['C#', '.NET MAUI'],

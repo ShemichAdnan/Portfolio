@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Github, Linkedin, Mail, ArrowDown } from 'lucide-react'
 import profilePhoto from '../assets/slikaaa.jpg'
+import resume from '../assets/AdnanSemic-CV.pdf'
 
 const Home = () => {
   const scrollToSection = (id) => {
@@ -62,10 +63,11 @@ const Home = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="hero-description"
           >
-            I'm a passionate developer specializing in building exceptional digital
-            experiences. Currently focused on creating responsive web applications
-            with modern technologies. I love turning complex problems into simple,
-            beautiful, and intuitive solutions.
+            As a final-year student, I’m highly motivated to learn and grow in 
+            real-world software engineering environments. I focus on developing 
+            responsive, modern applications, and I enjoy exploring innovative solutions 
+            to challenging problems. I’m looking for opportunities to contribute, learn, 
+            and expand my skills in web and software development.
           </motion.p>
 
           <motion.div
@@ -89,8 +91,8 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}
-            href="/AdnanŠemić-CV.pdf"
-            download="AdnanŠemić-CV.pdf"
+            href={resume}
+            download="AdnanSemic-CV.pdf"
             className="btn primary hero-cta"
           >
             Download CV
