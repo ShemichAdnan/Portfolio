@@ -174,7 +174,7 @@ main {
   max-width: 1100px;
 }
 .section-title {
-  margin: 0 0 1rem;
+  margin: 3 0 1rem;
   font-size: 1.75rem;
 }
 
@@ -371,7 +371,6 @@ main {
 }
 
 .projects-carousel {
-  min-height: 100vh;
   padding: 7rem 0rem 2rem 0rem;
   overflow: hidden;
   width: 100%;
@@ -856,7 +855,7 @@ main {
 
 @media (max-width: 770px) {
   .skills-column-section {
-    padding: 4rem 0rem 3rem 0rem;
+    padding: 6rem 0rem 3rem 0rem;
   }
   
   .skills-column-display {
@@ -963,7 +962,7 @@ main {
 
 .experience-section {
   min-height: 100vh;
-  padding: 6rem 0rem 4rem 0rem;
+  padding: 6rem 0rem 0rem 0rem;
   width: 100%;
 }
 .experience-container {
@@ -1256,8 +1255,7 @@ main {
 }
 
 .contact-modern-section {
-  min-height: 100vh;
-  padding: 6rem 0rem 4rem 0rem;
+  padding: 5rem 0rem 8rem 0rem;
   width: 100%;
   position: relative;
 }
@@ -1380,6 +1378,7 @@ main {
   max-width: 48rem;
   margin: 0 auto;
   line-height: 1.6;
+  padding-top: 15px;
 }
 
 @media (max-width: 900px) {
