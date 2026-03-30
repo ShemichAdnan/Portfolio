@@ -33,8 +33,8 @@ const projectsData = [
     image: LessonsImg,
     github: 'https://github.com/ShemichAdnan/LessonsPlatform',
     demo: null,
-    tags: ['TypeScript', 'Node.js', 'MySQL'],
-    inProgress: true
+    tags: ['TypeScript', 'Node.js', 'Express', 'MySQL'],
+    inProgress: false
   },
   {
     id: 4,

@@ -19,14 +19,14 @@ import {
 
 const skills = [
   { id: 1, name: 'JavaScript', icon: Code, },
-  { id: 2, name: 'React.js', icon: Code2, },
+  { id: 2, name: 'React', icon: Code2, },
   { id: 3, name: 'Java', icon: Coffee, },
   { id: 4, name: 'CSS', icon: Palette, },
   { id: 5, name: 'HTML', icon: FileCode, },
   { id: 6, name: 'C#', icon: Hash, },
   { id: 7, name: 'TypeScript', icon: Terminal, },
   { id: 8, name: 'C++', icon: Terminal, },
-  { id: 9, name: '.NET MAUI', icon: Smartphone, },
+  { id: 9, name: 'C', icon: Terminal, },
   { id: 10, name: 'Figma', icon: Figma, },
   { id: 11, name: 'Video Editing', icon: Video, }
 ]

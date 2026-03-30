@@ -23,6 +23,16 @@ const experiences = [
     type: 'Part-time',
     current: false,
   },
+  {
+    id: 3,
+    position: 'Software Engineering Intern',
+    company: 'GRAFiTBA',
+    location: 'Remote',
+    period: 'February, 2026 - March, 2026',
+    description: 'Contributed to an open source web project hosted on GitHub, collaborating with a small team of developers. Debugged and fixed issues on an existing web application, improving functionality and user experience. Learned real-world software development practices, including version control, code review, and team collaboration.',
+    type: 'Part-time',
+    current: false,
+  },
 ]
 
 const education = [
