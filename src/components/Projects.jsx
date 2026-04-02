@@ -5,6 +5,7 @@ import LessonsImg from '../assets/Lessons.png';
 import calculatorAppImg from '../assets/calculatorApp.png';
 import ECOllectImg from '../assets/ecollect.png';
 import ASHEImg from '../assets/ashe.png';
+import LEAPImg from '../assets/leap.png';
 const projectsData = [
   {
     id: 1,
@@ -28,9 +29,9 @@ const projectsData = [
   },
   {
     id: 3,
-    title: 'Lessons',
+    title: 'LEAP',
     description: 'This app connects people who want to learn something new with those who can teach it. Whether you’re looking for an instructor or want to offer your own tutoring services, the platform makes it easy to connect, browse profiles, and quickly find the ideal mentor or student.',
-    image: LessonsImg,
+    image: LEAPImg,
     github: 'https://github.com/ShemichAdnan/LessonsPlatform',
     demo: null,
     tags: ['TypeScript', 'Node.js', 'Express', 'MySQL'],
